@@ -1,0 +1,18 @@
+[package]
+name = "wsgi-async-core"
+version = "0.1.0"
+authors = ["James Welchman <james.welchman@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "wsgi_async_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+rand = "0.8.4"
+mio = "0.7.13"
+mio_httpc = "0.9.5"
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]
